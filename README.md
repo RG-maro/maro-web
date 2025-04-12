@@ -59,11 +59,17 @@
   <title>موقعي مع نغمة</title>
 </head>
 <body>
-  <h1>أهلاً وسهلاً بك 🌟</h1>
+  <h1>مرحبًا بك!</h1>
 
-  <p>اضغط الزر لسماع النغمة 🎶</p>
-  <button onclick="document.getElementById('bg-audio').play()">تشغيل النغمة</button>
+  <audio id="bg-sound" src="music.mp3" preload="auto"></audio>
 
-  <audio id="bg-audio" src="music.mp3" preload="auto"></audio>
+  <script>
+    window.addEventListener("click", function() {
+      const audio = document.getElementById("bg-sound");
+      audio.play();
+    }, { once: true });
+
+    alert("اضغط في أي مكان لتشغيل الصوت 🎵");
+  </script>
 </body>
 </html>
