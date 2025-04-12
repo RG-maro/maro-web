@@ -68,3 +68,50 @@
 </body>
 </html>
 <button onclick="document.getElementById('audio').play(https://www.youtube.com/watch?v=nRLuGEiGBak)">تشغيل 🎵</button>
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>الوضع الليلي والنهاري</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      padding-top: 100px;
+      transition: background-color 0.5s, color 0.5s;
+    }
+
+    /* الوضع النهاري */
+    body.light-mode {
+      background-color: #ffffff;
+      color: #000000;
+    }
+
+    /* الوضع الليلي */
+    body.dark-mode {
+      background-color: #121212;
+      color: #f0f0f0;
+    }
+
+    button {
+      padding: 12px 24px;
+      font-size: 18px;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+
+    .light-mode button {
+      background-color: #222;
+      color: white;
+    }
+
+    .dark-mode button {
+      background-color: #f0f0f0;
+      color: black;
+    }
+  </style>
+</head>
+<body class="
+
