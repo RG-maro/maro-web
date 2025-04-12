@@ -52,3 +52,18 @@
   <a class="link" href="https://discord.gg/funksKWwwY" target="_blank">💬 Discord Server</a>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>موقعي مع نغمة</title>
+</head>
+<body>
+  <h1>أهلاً وسهلاً بك 🌟</h1>
+
+  <p>اضغط الزر لسماع النغمة 🎶</p>
+  <button onclick="document.getElementById('bg-audio').play()">تشغيل النغمة</button>
+
+  <audio id="bg-audio" src="music.mp3" preload="auto"></audio>
+</body>
+</html>
