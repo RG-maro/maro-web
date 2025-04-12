@@ -56,20 +56,15 @@
 <html lang="ar">
 <head>
   <meta charset="UTF-8">
-  <title>موقعي مع نغمة</title>
+  <title>تشغيل نغمة تلقائي</title>
 </head>
 <body>
-  <h1>مرحبًا بك!</h1>
+  <h1>أهلاً بك في موقعي 🎶</h1>
 
-  <audio id="bg-sound" src="music.mp3" preload="auto"></audio>
+  <audio src="music.mp3" id="audio" preload="auto" autoplay loop></audio>
 
-  <script>
-    window.addEventListener("click", function() {
-      const audio = document.getElementById("bg-sound");
-      audio.play();
-    }, { once: true });
-
-    alert("اضغط في أي مكان لتشغيل الصوت 🎵");
-  </script>
+  <p>إذا لم تشتغل تلقائيًا، اضغط هنا:</p>
+  <button onclick="document.getElementById('audio').play()">تشغيل النغمة</button>
 </body>
 </html>
+
